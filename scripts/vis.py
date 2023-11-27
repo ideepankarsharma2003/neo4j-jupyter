@@ -71,7 +71,7 @@ def draw(graph, options, physics=False, limit=100):
     # is displayed for the node label. For example, in the movie graph, options = {"Movie": "title", "Person": "name"}.
     # Omitting a node label from the options dict will leave the node unlabeled in the visualization.
     # Setting physics = True makes the nodes bounce around when you touch them!
-    query = """
+    query = f"""
     MATCH (n)
     WITH n, rand() AS random
     ORDER BY random
